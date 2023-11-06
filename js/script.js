@@ -59,6 +59,5 @@ for (let i = 0; i < team.length; i++) {
 }
 
 
-{/* <img src="img/angela-caroll-chief-editor.jpg" alt=""> */}
 
 
