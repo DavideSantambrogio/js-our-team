@@ -2,37 +2,38 @@ const cardContainer= document.getElementById("my-card")
 
 const team = [
   {
-    "nome": "Wayne Barnett",
-    "ruolo": "Founder & CEO",
-    "foto": "wayne-barnett-founder-ceo.jpg"
+    nome: "Wayne Barnett",
+    ruolo: "Founder & CEO",
+    foto: "wayne-barnett-founder-ceo.jpg"
   },
   {
-    "nome": "Angela Caroll",
-    "ruolo": "Chief Editor",
-    "foto": "angela-caroll-chief-editor.jpg"
+    nome: "Angela Caroll",
+    ruolo: "Chief Editor",
+    foto: "angela-caroll-chief-editor.jpg"
   },
   {
-    "nome": "Walter Gordon",
-    "ruolo": "Office Manager",
-    "foto": "walter-gordon-office-manager.jpg"
+    nome: "Walter Gordon",
+    ruolo: "Office Manager",
+    foto: "walter-gordon-office-manager.jpg"
   },
   {
-    "nome": "Angela Lopez",
-    "ruolo": "Social Media Manager",
-    "foto": "angela-lopez-social-media-manager.jpg"
+    nome: "Angela Lopez",
+    ruolo: "Social Media Manager",
+    foto: "angela-lopez-social-media-manager.jpg"
   },
   {
-    "nome": "Scott Estrada",
-    "ruolo": "Developer",
-    "foto": "scott-estrada-developer.jpg"
+    nome: "Scott Estrada",
+    ruolo: "Developer",
+    foto: "scott-estrada-developer.jpg"
   },
   {
-    "nome": "Barbara Ramos",
-    "ruolo": "Graphic Designer",
-    "foto": "barbara-ramos-graphic-designer.jpg"
+    nome: "Barbara Ramos",
+    ruolo: "Graphic Designer",
+    foto: "barbara-ramos-graphic-designer.jpg"
   }
 ]
 // console.log(team)
+createCard()
 
 
 // stampa di ogni array
@@ -41,8 +42,12 @@ for (const member in team) {
 }
 
 
+
+// funzioni
+
 // crea card
-for (let i = 0; i < team.length; i++) {
+function createCard() {
+  for (let i = 0; i < team.length; i++) {
 
     const newCard = document.createElement("div");    
     newCard.classList.add("col-lg-4") 
@@ -55,10 +60,9 @@ for (let i = 0; i < team.length; i++) {
         + '<h2>' + team[i].nome + '</h2>'
         + '<p>' + team[i].ruolo + '</p>'
     )
-        cardContainer.append(newCard)
+    cardContainer.append(newCard)
+  }
 }
 
-
-{/* <img src="img/angela-caroll-chief-editor.jpg" alt=""> */}
 
 

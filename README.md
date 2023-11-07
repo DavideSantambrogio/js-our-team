@@ -12,4 +12,3 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
 
 
-<img src="img/angela-caroll-chief-editor.jpg" alt="">
