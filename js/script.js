@@ -33,18 +33,15 @@ const team = [
   }
 ]
 // console.log(team)
-createCard()
 
+createCard()
 
 // stampa di ogni array
 for (const member in team) {
     console.log(team[member]);
 }
 
-
-
 // funzioni
-
 // crea card
 function createCard() {
   for (let i = 0; i < team.length; i++) {
@@ -61,7 +58,7 @@ function createCard() {
         + '<p>' + team[i].ruolo + '</p>'
     )
     cardContainer.append(newCard)
-  }
+}
 }
 
 
